@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: -3.59rem;
+}
+.inputTask {
+  width: 37.675rem;
+  height: 3.25rem;
+  padding: 1rem;
+
+  border-radius: 8px;
+  background: var(--gray-500);
+
+  color: var(--gray-300);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+.inputTask::placeholder {
+  color: var(--gray-300);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+.addTaskBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 5.625rem;
+  height: 3.25rem;
+  border-radius: 8px;
+
+  background: var(--blueDark);
+  color: var(--gray-100);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 140%;
+
+  cursor: pointer;
+
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.addTaskBtn:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.addTaskBtn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
